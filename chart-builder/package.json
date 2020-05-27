@@ -1,0 +1,32 @@
+{
+  "name": "@chartiful/react-native-chart-builder",
+  "version": "0.1.0",
+  "description": "Foundation to React Native charts.",
+  "source": "src/index.tsx",
+  "main": "lib/chart-builder/src/index.js",
+  "types": "lib/chart-builder/src/index.d.ts",
+  "scripts": {
+    "build": "tsc --skipLibCheck",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chartiful/react-native-chart.git"
+  },
+  "keywords": [
+    "react-native",
+    "charts",
+    "graphs"
+  ],
+  "author": "Sean Watters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chartiful/react-native-charts/issues"
+  },
+  "homepage": "https://github.com/chartiful/react-native-charts#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-native": "^0.62.2",
+    "react-native-svg": "^12.1.0"
+  }
+}

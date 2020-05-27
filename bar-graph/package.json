@@ -1,10 +1,10 @@
 {
-  "name": "@chartiful/react-native-chart-builder",
+  "name": "@chartiful/react-native-bar-graph",
   "version": "0.1.0",
-  "description": "Foundation to React Native charts.",
+  "description": "React Native bar graph.",
   "source": "src/index.tsx",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/bar-graph/src/index.js",
+  "types": "lib/bar-graph/src/index.d.ts",
   "scripts": {
     "build": "tsc --skipLibCheck",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,10 +21,11 @@
   "author": "Sean Watters",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chartiful/react-native-chart-builder/issues"
+    "url": "https://github.com/chartiful/react-native-charts/issues"
   },
-  "homepage": "https://github.com/chartiful/react-native-chart-builder#readme",
+  "homepage": "https://github.com/chartiful/react-native-charts#readme",
   "dependencies": {
+    "@chartiful/react-native-chart-builder": "^0.1.0",
     "react": "^16.13.1",
     "react-native": "^0.62.2",
     "react-native-svg": "^12.1.0"

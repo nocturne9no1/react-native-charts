@@ -2,7 +2,7 @@ import React from 'react'
 import { Platform } from 'react-native'
 import { Line, Text } from 'react-native-svg'
 
-import { BaseChartConfig } from './types'
+import { BaseChartConfig } from '../../types'
 
 export default class ChartBuilder {
   data: number[]
