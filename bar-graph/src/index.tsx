@@ -1,7 +1,7 @@
 import React from 'react'
 import { View } from 'react-native'
 import { Svg, Rect, G } from 'react-native-svg'
-import ChartBuilder from '@cartiful/react-native-chart-builder'
+import ChartBuilder from '@chartiful/react-native-chart-builder'
 import { BaseChartConfig } from '../../types'
 
 const BarChart = ({
