@@ -1,6 +1,6 @@
 {
   "name": "@chartiful/react-native-chart-builder",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Foundation to React Native charts.",
   "source": "src/index.tsx",
   "main": "lib/chart-builder/src/index.js",
@@ -24,9 +24,9 @@
     "url": "https://github.com/chartiful/react-native-charts/issues"
   },
   "homepage": "https://github.com/chartiful/react-native-charts#readme",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-svg": "^12.1.0"
+  "devDependencies": {
+    "react": "~16.9.0",
+    "react-native": "~0.61.5",
+    "react-native-svg": "^9.13.3"
   }
 }
