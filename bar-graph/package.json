@@ -1,6 +1,6 @@
 {
   "name": "@chartiful/react-native-bar-graph",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "React Native bar graph.",
   "source": "src/index.tsx",
   "main": "lib/bar-graph/src/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chartiful/react-native-chart.git"
+    "url": "git+https://github.com/chartiful/react-native-charts.git"
   },
   "keywords": [
     "react-native",
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/chartiful/react-native-charts/issues"
   },
-  "homepage": "https://github.com/chartiful/react-native-charts#readme",
+  "homepage": "https://github.com/chartiful/react-native-charts/tree/master/bar-graph",
   "devDependencies": {
     "@chartiful/react-native-chart-builder": "^0.1.4",
     "react": "~16.9.0",
