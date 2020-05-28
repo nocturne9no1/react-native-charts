@@ -1,1 +1,1 @@
-# @chartiful/react-native-chart-builder
+# @chartiful/react-native-bar-graph
