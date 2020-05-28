@@ -1,6 +1,6 @@
 {
   "name": "@chartiful/react-native-bar-graph",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "React Native bar graph.",
   "source": "src/index.tsx",
   "main": "lib/bar-graph/src/index.js",
