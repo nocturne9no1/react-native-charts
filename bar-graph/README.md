@@ -1,4 +1,3 @@
-
 ## Bar Graphs
 
 <img src="https://seanwatters.io/images/@chartiful-react-native-bar-charts.png" height="400px" alt="bar graph image">
