@@ -1,11 +1,20 @@
+
 ## Bar Graphs
 
 <img src="https://seanwatters.io/images/@chartiful-react-native-bar-charts.png" height="400px" alt="bar graph image">
 
+### Installation
+
+```bash
+npm i @chartiful/react-native-chart-builder @chartiful/react-native-bar-graphs
+```
+
 ### Example
 
 ```jsx
-<BarChart
+import BarGraph from '@chartiful/react-native-bar-graphs'
+
+<BarGraph
   data={[20, 45, 28, 80, 99, 43, 50]}
   labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
   width={400}
