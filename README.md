@@ -24,9 +24,9 @@ A chart library for React Native. Currently there is support for vertical bar gr
     - `position`?: string (accepts: `'left'` or `'right'`. Defaults to: `'left'`)
     - `width`?: number,
     - `decimals`?: number
-  
+
   }
-  
+
 - `yAxisLabelStyle`?: {
     - `fontFamily`?: string
     - `fontSize`?: number
@@ -35,7 +35,7 @@ A chart library for React Native. Currently there is support for vertical bar gr
     - `rotation`?: number
     - `offset`?: number
     - `height`?: number
-    
+
   }
 
 - `hasXAxisBackgroundLines`?: boolean
@@ -45,15 +45,15 @@ A chart library for React Native. Currently there is support for vertical bar gr
 - `xAxisBackgroundLineStyle`?: {
     - `strokeWidth`?: number
     - `color`?: string
-    
+
   }
-  
+
 - `yAxisBackgroundLineStyle`?: {
     - `strokeWidth`?: number
     - `color`?: string
-    
+
   }
-  
+
 <br>
 
 ## Bar Graphs
@@ -99,10 +99,10 @@ import BarGraph from '@chartiful/react-native-bar-graphs'
 
 - `width`: number
 
-- `data`: <Array>number
-  
-- `labels`?: <Array>string  (defaults to `[1, 2, 3, ...]`)
-  
+- `data`: number[]
+
+- `labels`?: string[]  (defaults to `[1, 2, 3, ...]`)
+
 - `barRadius`?: number  (defaults to `0`)
 
 - `barWidthPercentage`?: number  (defaults to `0.7`)

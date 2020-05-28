@@ -42,10 +42,10 @@ import BarGraph from '@chartiful/react-native-bar-graphs'
 
 - `width`: number
 
-- `data`: <Array>number
-  
-- `labels`?: <Array>string  (defaults to `[1, 2, 3, ...]`)
-  
+- `data`: number[]
+
+- `labels`?: string[]  (defaults to `[1, 2, 3, ...]`)
+
 - `barRadius`?: number  (defaults to `0`)
 
 - `barWidthPercentage`?: number  (defaults to `0.7`)
