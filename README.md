@@ -62,18 +62,18 @@ A chart library for React Native. Currently there is support for vertical bar gr
 
 **[package](https://www.npmjs.com/package/@chartiful/react-native-bar-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-bar-charts.png" height="400px" alt="bar graph image">
+<img src="https://seanwatters.io/images/@chartiful-react-native-bar-graph.png" height="400px" alt="bar graph image">
 
 ### Installation
 
 ```bash
-npm i @chartiful/react-native-chart-builder @chartiful/react-native-bar-graphs
+npm i @chartiful/react-native-chart-builder @chartiful/react-native-bar-graph
 ```
 
 ### Example
 
 ```jsx
-import BarGraph from '@chartiful/react-native-bar-graphs'
+import BarGraph from '@chartiful/react-native-bar-graph'
 
 <BarGraph
   data={[20, 45, 28, 80, 99, 43, 50]}

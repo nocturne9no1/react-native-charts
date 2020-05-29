@@ -27,7 +27,7 @@ const BarChart = ({
   barWidthPercentage?: number,
   barColor?: string,
   style?: any,
-  baseConfig: BaseChartConfig
+  baseConfig?: BaseChartConfig
 }) => {
   const chartBuilder = new ChartBuilder({
     data,
@@ -43,13 +43,13 @@ const BarChart = ({
     const slotGap: number = chartBuilder.yLabelSlotWidth - barWidth
 
     return data.map((val: number, i: number) => {
-      const barHeight: number = chartBuilder.calcDataPointHeight(val) - chartBuilder.yAxisLabelHeight
+      const barHeight: number = chartBuilder.calcDataPointHeight(val)
 
       return (
         <Rect
           key={Math.random()}
           x={(i * chartBuilder.yLabelSlotWidth) + (slotGap / 2) + chartBuilder.leftAlignedXAxisLabelWidth}
-          y={baseHeight - (barHeight < 0 ? 0 : barHeight)}
+          y={baseHeight - barHeight}
           rx={barRadius}
           width={barWidth}
           height={barHeight < 0 ? 0 : barHeight}

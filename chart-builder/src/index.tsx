@@ -30,8 +30,8 @@ export default class ChartBuilder {
     offset?: number
     prefix?: string
     suffix?: string,
-    position?: string // 'left' or 'right'
-    width: number,
+    position?: string
+    width?: number,
     decimals?: number
   }
   yAxisLabelStyle?: {
@@ -41,8 +41,8 @@ export default class ChartBuilder {
     color?: string
     rotation?: number
     offset?: number
-    position?: string // 'top' or 'bottom'
-    height: number
+    position?: string
+    height?: number
   }
 
   hasXAxisBackgroundLines?: boolean
@@ -68,7 +68,7 @@ export default class ChartBuilder {
 
   public xAxisLabelWidth: number
   public leftAlignedXAxisLabelWidth: number
-  private xAxisLabelPosition: string
+  public xAxisLabelPosition: string
   private yDistanceBetweenXLabels: number
 
   public yAxisLabelHeight: number
@@ -127,8 +127,6 @@ export default class ChartBuilder {
     this.maxVal = Math.max(...this.data)
     this.minVal = Math.min(...this.data)
 
-
-    // default constants
     this.X_AXIS_LABEL_WIDTH = 50
     this.Y_AXIS_LABEL_HEIGHT = 50
 
@@ -167,9 +165,9 @@ export default class ChartBuilder {
     const max: number = Math.max(...this.data)
 
     if (this.startAtZero) {
-      return this.height * (val / this.deltaBetweenGreatestAndLeast)
+      return (this.height - this.yAxisLabelHeight) * (val / this.maxVal)
     } else if (this.minVal >= 0 && max >= 0) {
-      return this.height * ((val - this.minVal) / this.deltaBetweenGreatestAndLeast)
+      return (this.height - this.yAxisLabelHeight) * ((val - this.minVal) / this.deltaBetweenGreatestAndLeast)
     } else {
       return this.height * ((val - max) / this.deltaBetweenGreatestAndLeast)
     }
