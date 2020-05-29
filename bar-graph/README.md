@@ -1,6 +1,6 @@
 ## Bar Graphs
 
-**[package](https://www.npmjs.com/package/@chartiful/react-native-bar-graph)**
+**[NPM package](https://www.npmjs.com/package/@chartiful/react-native-bar-graph)**
 
 <img src="https://seanwatters.io/images/@chartiful-react-native-bar-graph.png" height="400px" alt="bar graph image">
 
