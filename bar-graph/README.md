@@ -1,5 +1,7 @@
 ## Bar Graphs
 
+**[package](https://www.npmjs.com/package/@chartiful/react-native-bar-graph)**
+
 <img src="https://seanwatters.io/images/@chartiful-react-native-bar-charts.png" height="400px" alt="bar graph image">
 
 ### Installation
@@ -41,9 +43,9 @@ import BarGraph from '@chartiful/react-native-bar-graphs'
 
 - `width`: number
 
-- `data`: number[]
+- `data`: `<Array>number`
 
-- `labels`?: string[]  (defaults to `[1, 2, 3, ...]`)
+- `labels`?: `<Array>string`  (defaults to `[1, 2, 3, ...]`)
 
 - `barRadius`?: number  (defaults to `0`)
 
@@ -53,4 +55,4 @@ import BarGraph from '@chartiful/react-native-bar-graphs'
 
 - `style`?: `ReactNative.StyleSheet`
 
-- `baseConfig`?: `BaseChartConfig`
+- `baseConfig`?: `BaseChartConfig` (found here: [link](https://github.com/chartiful/react-native-charts#readme))
