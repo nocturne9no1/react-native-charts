@@ -1,4 +1,4 @@
-## Bar Graphs
+## Bar Graph
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-bar-graph)**
 
