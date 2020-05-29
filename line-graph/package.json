@@ -1,6 +1,6 @@
 {
   "name": "@chartiful/react-native-line-graph",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native line graph.",
   "source": "src/index.tsx",
   "main": "lib/line-graph/src/index.js",

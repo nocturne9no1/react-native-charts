@@ -1,4 +1,4 @@
-## Line Graphs
+## Line Graph
 
 **[package](https://www.npmjs.com/package/@chartiful/react-native-line-graph)**
 
