@@ -1,6 +1,6 @@
 {
   "name": "@chartiful/react-native-horizontal-bar-graph",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Native hgorizontal bar graph.",
   "source": "src/index.tsx",
   "main": "lib/horizontal-bar-graph/src/index.js",
