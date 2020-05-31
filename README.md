@@ -20,7 +20,8 @@ A chart library for React Native. Currently there is support for vertical bar gr
     - `fontWeight`?: number
     - `color`?: string
     - `rotation`?: number
-    - `offset`?: number
+    - `xOffset`?: number
+    - `yOffset`?: number
     - `prefix`?: string
     - `suffix`?: string,
     - `position`?: string (accepts: `'left'` or `'right'`. Defaults to: `'left'`)
@@ -35,7 +36,8 @@ A chart library for React Native. Currently there is support for vertical bar gr
     - `fontWeight`?: number
     - `color`?: string
     - `rotation`?: number
-    - `offset`?: number
+    - `xOffset`?: number
+    - `yOffset`?: number
     - `height`?: number
 
   }
