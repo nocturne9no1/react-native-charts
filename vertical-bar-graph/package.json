@@ -1,6 +1,6 @@
 {
   "name": "@chartiful/react-native-vertical-bar-graph",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Native vertical bar graph.",
   "source": "src/index.tsx",
   "main": "lib/vertical-bar-graph/src/index.js",
