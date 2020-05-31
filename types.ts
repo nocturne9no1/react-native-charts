@@ -11,7 +11,7 @@ export interface BaseChartConfig {
   hasYAxisLabels?: boolean
 
   xAxisLabelCount?: number
-  // @TODO implement: yAxisLabelCount?: number
+  yAxisLabelCount?: number
 
   xAxisLabelStyle?: {
     fontFamily?: string
@@ -19,11 +19,13 @@ export interface BaseChartConfig {
     fontWeight?: number
     color?: string
     rotation?: number
-    offset?: number
+    xOffset?: number
+    yOffset?: number
     prefix?: string
-    suffix?: string,
-    position?: string // 'left' or 'right'
-    width: number,
+    suffix?: string
+    position?: string
+    width?: number
+    height?: number
     decimals?: number
   }
   yAxisLabelStyle?: {
@@ -32,9 +34,11 @@ export interface BaseChartConfig {
     fontWeight?: number
     color?: string
     rotation?: number
-    offset?: number
-    position?: string // 'top' or 'bottom'
-    height: number
+    xOffset?: number
+    yOffset?: number
+    position?: string
+    height?: number
+    width?: number
   }
 
   hasXAxisBackgroundLines?: boolean
@@ -48,16 +52,44 @@ export interface BaseChartConfig {
     strokeWidth?: number
     color?: string
   }
+}
 
-  backgroundStyle?: {
-    color?: string
-    gradient?: {
-      to: string
-      from: string
-    }
-    opacity?: {
-      to: number
-      from: number
-    }
-  }
+export interface HorizontalBarGraphConfig {
+  data: number[]
+  labels?: string[]
+  height: number
+  width: number
+  barRadius?: number
+  barWidthPercentage?: number
+  barColor?: string
+  style?: any
+  baseConfig?: BaseChartConfig
+}
+
+export interface VerticalBarGraphConfig {
+  data: number[]
+  labels?: string[]
+  height: number
+  width: number
+  barRadius?: number
+  barWidthPercentage?: number
+  barColor?: string
+  style?: any
+  baseConfig?: BaseChartConfig
+}
+
+export interface LineGraphConfig {
+  data: number[]
+  height: number
+  width: number
+  hasLine: boolean
+  lineWidth: number
+  lineColor: string
+  isBezier: boolean
+  hasShadow: boolean
+  hasDots: boolean
+  dotColor: string
+  dotSize: number
+  style?: any,
+  baseConfig?: BaseChartConfig
 }

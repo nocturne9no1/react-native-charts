@@ -58,37 +58,35 @@ A chart library for React Native. Currently there is support for vertical bar gr
 
 <br>
 
-## Bar Graph
+## Vertical Bar Graph
 
-**[NPM package](https://www.npmjs.com/package/@chartiful/react-native-bar-graph)**
+**[NPM package](https://www.npmjs.com/package/@chartiful/react-native-vertical-bar-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-bar-graph.png" height="400px" alt="bar graph image">
+<img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" height="400px" alt="bar graph image">
 
 ### Installation
 
 ```bash
-npm i @chartiful/react-native-chart-builder @chartiful/react-native-bar-graph
+npm i @chartiful/react-native-chart-builder @chartiful/react-native-vertical-bar-graph
 ```
 
 ### Example
 
 ```jsx
-import BarGraph from '@chartiful/react-native-bar-graph'
+import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
 
-<BarGraph
+<VerticalBarGraph
   data={[20, 45, 28, 80, 99, 43, 50]}
   labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
-  width={400}
-  height={500}
+  width={Dimensions.get('window').width - 35}
+  height={Dimensions.get('window').width / 7 + 225}
   barRadius={5}
   barWidthPercentage={0.65}
-  barColor='#0d0a0b'
   baseConfig={{
     hasXAxisBackgroundLines: false,
     xAxisLabelStyle: {
       position: 'right',
-      prefix: '$',
-      offset: 17.5
+      prefix: '$'
     }
   }}
   style={{
@@ -103,9 +101,9 @@ import BarGraph from '@chartiful/react-native-bar-graph'
 
 - `width`: number
 
-- `data`: number[]
+- `data`: `<Array>number`
 
-- `labels`?: string[]  (defaults to `[1, 2, 3, ...]`)
+- `labels`?: `<Array>string`  (defaults to `[1, 2, 3, ...]`)
 
 - `barRadius`?: number  (defaults to `0`)
 
@@ -115,7 +113,7 @@ import BarGraph from '@chartiful/react-native-bar-graph'
 
 - `style`?: `ReactNative.StyleSheet`
 
-- `baseConfig`?: `BaseChartConfig`
+- `baseConfig`?: `BaseChartConfig` (found here: [link](https://github.com/chartiful/react-native-charts#readme))
 
 <br>
 
@@ -181,3 +179,70 @@ import LineGraph from '@chartiful/react-native-line-graph'
 - `style`?: `ReactNative.StyleSheet`
 
 - `baseConfig`?: `BaseChartConfig`
+
+<br>
+
+## Horizontal Bar Graph
+
+**[NPM package](https://www.npmjs.com/package/@chartiful/react-native-horizontal-bar-graph)**
+
+<img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" height="400px" alt="bar graph image">
+
+### Installation
+
+```bash
+npm i @chartiful/react-native-chart-builder @chartiful/react-native-horizontal-bar-graph
+```
+
+### Example
+
+```jsx
+import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph'
+
+<HorizontalBarGraph
+  data={[125, 100, 50, 75, 100, 125]}
+  labels={['Q1, 2019', 'Q2, 2019', 'Q3, 2019', 'Q4, 2019', 'Q1, 2020', 'Q2, 2020']}
+  width={375}
+  height={350}
+  barRadius={15}
+  baseConfig={{
+    hasYAxisBackgroundLines: false,
+    xAxisLabelStyle: {
+      rotation: 0,
+      fontSize: 12,
+      width: 70,
+      yOffset: 4,
+      xOffset: -15
+    },
+    yAxisLabelStyle: {
+      rotation: 30,
+      fontSize: 13,
+      prefix: '$',
+      position: 'bottom',
+      xOffset: 15,
+      decimals: 2,
+      height: 100
+    }
+  }}
+/>
+```
+
+### Interface
+
+- `height`: number
+
+- `width`: number
+
+- `data`: `<Array>number`
+
+- `labels`?: `<Array>string`  (defaults to `[1, 2, 3, ...]`)
+
+- `barRadius`?: number  (defaults to `0`)
+
+- `barWidthPercentage`?: number  (defaults to `0.7`)
+
+- `barColor`?: string  (defaults to `#000000`)
+
+- `style`?: `ReactNative.StyleSheet`
+
+- `baseConfig`?: `BaseChartConfig` (found here: [link](https://github.com/chartiful/react-native-charts#readme))

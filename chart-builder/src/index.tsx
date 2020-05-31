@@ -17,6 +17,7 @@ export default class ChartBuilder {
   hasYAxisLabels?: boolean
 
   xAxisLabelCount: number
+  yAxisLabelCount?: number
 
   xAxisPrefix?: string
   xAxisSuffix?: string
@@ -27,7 +28,8 @@ export default class ChartBuilder {
     fontWeight?: number
     color?: string
     rotation?: number
-    offset?: number
+    xOffset?: number
+    yOffset?: number
     prefix?: string
     suffix?: string,
     position?: string
@@ -40,7 +42,8 @@ export default class ChartBuilder {
     fontWeight?: number
     color?: string
     rotation?: number
-    offset?: number
+    xOffset?: number
+    yOffset?: number
     position?: string
     height?: number
   }
@@ -98,12 +101,11 @@ export default class ChartBuilder {
       color: '#000000'
     }
   }: BaseChartConfig) {
+    this.X_AXIS_LABEL_WIDTH = 50
+    this.Y_AXIS_LABEL_HEIGHT = 50
+
     this.data = data
-    if (labels) {
-      this.labels = labels
-    } else {
-      this.labels = [...new Array(this.data.length)].map((_, i) => i.toString())
-    }
+    this.labels = labels || [...new Array(this.data.length)].map((_, i) => i.toString())
 
     this.startAtZero = startAtZero
 
@@ -127,8 +129,6 @@ export default class ChartBuilder {
     this.maxVal = Math.max(...this.data)
     this.minVal = Math.min(...this.data)
 
-    this.X_AXIS_LABEL_WIDTH = 50
-    this.Y_AXIS_LABEL_HEIGHT = 50
 
     this.xAxisLabelWidth = this.X_AXIS_LABEL_WIDTH
     this.xAxisLabelPosition = 'left'
@@ -212,8 +212,8 @@ export default class ChartBuilder {
         return (
           <Line
             key={Math.random()}
-            x1={this.yLabelSlotWidth * i}
-            x2={this.yLabelSlotWidth * i}
+            x1={(i * this.yLabelSlotWidth) + (this.yLabelSlotWidth / 2) + this.leftAlignedXAxisLabelWidth}
+            x2={(i * this.yLabelSlotWidth) + (this.yLabelSlotWidth / 2) + this.leftAlignedXAxisLabelWidth}
             y1={0}
             y2={this.baseHeight}
             stroke={color}
@@ -226,7 +226,8 @@ export default class ChartBuilder {
   }
 
   public renderXAxisLabels () {
-    let offset: number = 0
+    let xOffset: number = 0
+    let yOffset: number = 0
     let rotation: number = 0
     let fontFamily: string = Platform.OS === 'ios' ? 'Avenir Next' : 'Roboto'
     let fontSize: number = 14
@@ -237,7 +238,8 @@ export default class ChartBuilder {
     let decimals: number = 0
 
     if (this.xAxisLabelStyle) {
-      offset = this.xAxisLabelStyle.offset || offset
+      xOffset = this.xAxisLabelStyle.xOffset || xOffset
+      yOffset = this.xAxisLabelStyle.yOffset || yOffset
       rotation = this.xAxisLabelStyle.rotation || rotation
       fontFamily = this.xAxisLabelStyle.fontFamily || fontFamily
       fontSize = this.xAxisLabelStyle.fontSize || fontSize
@@ -249,31 +251,38 @@ export default class ChartBuilder {
     }
 
     return [...new Array(this.xAxisLabelCount + 1)].map((_, i) => {
-      const label: number = this.deltaBetweenGreatestAndLeast
+      const label: string = prefix
+      + (this.deltaBetweenGreatestAndLeast
       / this.xAxisLabelCount
       * Math.abs(i - this.xAxisLabelCount - 1)
-      + (this.startAtZero ? 0 : Math.min(...this.data))
+      + (this.startAtZero ? 0 : Math.min(...this.data))).toFixed(decimals).toString()
+      + suffix
+
+      const x = (this.xAxisLabelPosition === 'right' ? this.width - this.xAxisLabelWidth : 0) + xOffset + fontSize * label.length / 2
+      const y = (this.yDistanceBetweenXLabels * i) - this.yDistanceBetweenXLabels + fontSize + yOffset
 
       return (
         <Text
-          rotation={rotation}
           key={Math.random()}
-          x={(this.xAxisLabelPosition === 'right' ? this.width - this.xAxisLabelWidth : 0) + offset}
-          y={(this.yDistanceBetweenXLabels * i) - this.yDistanceBetweenXLabels + fontSize}
-          textAnchor='start'
+          origin={`${x}, ${y}`}
+          x={x}
+          y={y}
+          rotation={rotation}
+          textAnchor='middle'
           fontFamily={fontFamily}
           fontSize={fontSize}
           fontWeight={fontWeight}
           fill={color}
         >
-          {`${prefix}${label.toFixed(decimals)}${suffix}`}
+          {label}
         </Text>
       )
     })
   }
 
   public renderYAxisLabels () {
-    let offset: number = 0
+    let xOffset: number = 0
+    let yOffset: number = 0
     let rotation: number = 0
     let fontFamily: string = Platform.OS === 'ios' ? 'Avenir Next' : 'Roboto'
     let fontSize: number = 14
@@ -282,7 +291,8 @@ export default class ChartBuilder {
     let position: string = 'bottom'
 
     if (this.yAxisLabelStyle) {
-      offset = this.yAxisLabelStyle.offset || offset
+      xOffset = this.yAxisLabelStyle.xOffset || xOffset
+      yOffset = this.yAxisLabelStyle.yOffset || yOffset
       rotation = this.yAxisLabelStyle.rotation || rotation
       fontFamily = this.yAxisLabelStyle.fontFamily || fontFamily
       fontSize = this.yAxisLabelStyle.fontSize || fontSize
@@ -292,13 +302,17 @@ export default class ChartBuilder {
     }
 
     return this.labels.map((label, i) => {
+      const x = (i * this.yLabelSlotWidth) + (this.yLabelSlotWidth / 2) + xOffset + this.leftAlignedXAxisLabelWidth
+      const y = this.baseHeight - fontSize + yOffset
+
       return (
         <Text
-          rotation={rotation}
           key={Math.random()}
-          x={(i * this.yLabelSlotWidth) + (this.yLabelSlotWidth / 2.1) + offset + this.leftAlignedXAxisLabelWidth}
-          y={this.baseHeight - fontSize}
-          textAnchor={rotation === 0 ? 'middle' : 'start'}
+          origin={`${x}, ${y}`}
+          x={x}
+          y={y}
+          rotation={rotation}
+          textAnchor={'middle'}
           fontFamily={fontFamily}
           fontSize={fontSize}
           fontWeight={fontWeight}
