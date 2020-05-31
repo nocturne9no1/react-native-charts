@@ -2,7 +2,7 @@
 
 **[NPM packages](https://www.npmjs.com/org/chartiful)**
 
-A chart library for React Native. Currently there is support for vertical bar graphs, and line graphs, with support coming for scatter plots, pie charts, progress rings, heat maps, and horizontal bar graphs.
+A chart library for React Native. Currently there is support for vertical bar graphs, horizontal bar graphs, and line graphs, with support coming for scatter plots, pie charts, progress rings, and heat maps.
 
 ## BaseChartConfig
 
