@@ -2,8 +2,8 @@ import React from 'react'
 import { View } from 'react-native'
 import { Svg, Circle, Polygon, Polyline, Path, G, LinearGradient, Stop } from 'react-native-svg'
 
-import { LineGraphConfig } from '../../types'
-import ChartBuilder from '@chartiful/react-native-chart-builder'
+import { BaseChartConfig } from '../../types'
+import ChartBuilder from './chart-builder'
 
 const LineChart = ({
   data = [0,0,0,0],
@@ -19,7 +19,22 @@ const LineChart = ({
   dotSize = 5,
   style = {},
   baseConfig
-}: LineGraphConfig) => {
+}: {
+  data: number[],
+  height: number,
+  width: number,
+  hasLine: boolean,
+  lineWidth: number,
+  lineColor: string,
+  isBezier: boolean,
+  hasShadow: boolean,
+  hasDots: boolean,
+  dotColor: string,
+  dotSize: number,
+  style?: any,
+  baseConfig: BaseChartConfig
+}) => {
+
   const heightAdjustment = (dotSize > lineWidth ? dotSize : lineWidth)
 
   const chartBuilder = new ChartBuilder({
