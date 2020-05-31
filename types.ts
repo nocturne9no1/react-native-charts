@@ -93,3 +93,15 @@ export interface LineGraphConfig {
   style?: any,
   baseConfig?: BaseChartConfig
 }
+
+export interface PieChartConfig {
+  data: {
+    volume: number
+    color: string
+    label: string
+  }[],
+  height: number,
+  width: number,
+  center: number,
+  style?: any
+}
