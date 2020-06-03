@@ -11,8 +11,7 @@ const Legend = ({
   dotSize,
   fontFamily,
   fontSize,
-  fontWeight,
-  style = {}
+  fontWeight
 }: LegendConfig) => {
 
   const slotHeight: number = (height + dotSize) / data.length

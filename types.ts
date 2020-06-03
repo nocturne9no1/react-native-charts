@@ -122,5 +122,4 @@ export interface LegendConfig {
   fontSize: number
   fontWeight: number
   xOffset: number
-  style?: any
 }

@@ -43,7 +43,6 @@ const PieChart = ({
         fontWeight={400}
         fontSize={12}
         xOffset={width - legendWidth}
-        style={{marginLeft: width}}
       />
     )
   }

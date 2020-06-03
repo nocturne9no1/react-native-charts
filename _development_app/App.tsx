@@ -117,7 +117,7 @@ export default function App() {
             fontSize: 11,
             width: 60,
             yOffset: 4,
-            xOffset: -12
+            xOffset: -13
           },
           yAxisLabelStyle: {
             rotation: 30,
@@ -131,12 +131,12 @@ export default function App() {
           }
         }}
         style={{
-          marginBottom: 30,
+          marginBottom: 80,
           padding: 10,
           paddingTop: 20,
           borderRadius: 20,
           width: Dimensions.get('window').width - 155,
-          backgroundColor: `#e1f5d6`
+          backgroundColor: `#e1f5d6`,
         }}
       />
     </ScrollView>
