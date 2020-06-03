@@ -80,10 +80,11 @@ import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
 <VerticalBarGraph
   data={[20, 45, 28, 80, 99, 43, 50]}
   labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
-  width={Dimensions.get('window').width - 35}
-  height={Dimensions.get('window').width / 7 + 225}
+  width={Dimensions.get('window').width - 90}
+  height={200}
   barRadius={5}
   barWidthPercentage={0.65}
+  barColor='#53ae31'
   baseConfig={{
     hasXAxisBackgroundLines: false,
     xAxisLabelStyle: {
@@ -92,7 +93,12 @@ import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
     }
   }}
   style={{
-    paddingVertical: 10
+    marginBottom: 30,
+    padding: 10,
+    paddingTop: 20,
+    borderRadius: 20,
+    backgroundColor: `#dff4d7`,
+    width: Dimensions.get('window').width - 70
   }}
 />
 ```
@@ -138,16 +144,28 @@ import LineGraph from '@chartiful/react-native-line-graph'
 
 <LineGraph
   data={[10, 15, 7, 20, 14, 12, 10, 20]}
-  width={375}
-  height={300}
+  width={Dimensions.get('window').width - 90}
+  height={200}
+  lineColor='#347975'
+  dotColor='#347975'
+  lineWidth={3}
   isBezier
-  hasShadow
+  hasDots={true}
   baseConfig={{
     startAtZero: false,
-    hasXAxisBackgroundLines: false
+    hasXAxisBackgroundLines: false,
+    xAxisLabelStyle: {
+      prefix: '$',
+      offset: 0
+    }
   }}
   style={{
-    marginTop: 30
+    marginBottom: 30,
+    padding: 10,
+    paddingTop: 20,
+    borderRadius: 20,
+    width: Dimensions.get('window').width - 70,
+    backgroundColor: `#dbf0ef`
   }}
 />
 ```
@@ -204,17 +222,18 @@ import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph'
 <HorizontalBarGraph
   data={[125, 100, 50, 75, 100, 125]}
   labels={['Q1, 2019', 'Q2, 2019', 'Q3, 2019', 'Q4, 2019', 'Q1, 2020', 'Q2, 2020']}
-  width={375}
-  height={350}
-  barRadius={15}
+  width={Dimensions.get('window').width - 100}
+  height={225}
+  barRadius={7}
+  barColor='#82d551'
   baseConfig={{
     hasYAxisBackgroundLines: false,
     xAxisLabelStyle: {
       rotation: 0,
-      fontSize: 12,
-      width: 70,
+      fontSize: 11,
+      width: 60,
       yOffset: 4,
-      xOffset: -15
+      xOffset: -12
     },
     yAxisLabelStyle: {
       rotation: 30,
@@ -222,9 +241,18 @@ import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph'
       prefix: '$',
       position: 'bottom',
       xOffset: 15,
+      yOffset: -10,
       decimals: 2,
-      height: 100
+      height: 50
     }
+  }}
+  style={{
+    marginBottom: 30,
+    padding: 10,
+    paddingTop: 20,
+    borderRadius: 20,
+    width: Dimensions.get('window').width - 155,
+    backgroundColor: `#e1f5d6`
   }}
 />
 ```
