@@ -3,7 +3,7 @@
 **[NPM packages](https://www.npmjs.com/org/chartiful)**
 
 <p align="center">
-  <img src="https://seanwatters.io/images/@chartiful-react-native-overview.png" width="250px" alt="bar graph image">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-overview.png" width="400px" alt="bar graph image">
 </p>
 
 A chart library for React Native. Currently there is support for vertical bar graphs, horizontal bar graphs, and line graphs, with support coming for scatter plots, pie charts, progress rings, and heat maps.
@@ -68,7 +68,7 @@ A chart library for React Native. Currently there is support for vertical bar gr
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-vertical-bar-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" height="250px" alt="bar graph image">
+<img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" height="300px" alt="bar graph image">
 
 ### Installation
 
@@ -133,7 +133,7 @@ import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-line-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" height="250px" alt="bar graph image">
+<img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" height="300px" alt="bar graph image">
 
 ### Installation
 
@@ -210,7 +210,7 @@ import LineGraph from '@chartiful/react-native-line-graph'
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-horizontal-bar-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" height="250px" alt="bar graph image">
+<img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" height="300px" alt="bar graph image">
 
 ### Installation
 
