@@ -105,3 +105,18 @@ export interface PieChartConfig {
   center: number,
   style?: any
 }
+
+export interface LegendConfig {
+  data: {
+    volume: number
+    color: string
+    label: string
+  }[]
+  height: number
+  width: number
+  dotSize: number
+  fontFamily: string
+  fontSize: number
+  fontWeight: number
+  style?: any
+}

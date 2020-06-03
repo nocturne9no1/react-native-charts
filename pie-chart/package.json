@@ -25,17 +25,10 @@
     "url": "https://github.com/chartiful/react-native-charts/issues"
   },
   "homepage": "https://github.com/chartiful/react-native-charts/tree/master/pie-chart",
-  "devDependencies": {
-    "react": "~16.9.0",
-    "react-native": "~0.61.5",
-    "react-native-svg": "^9.13.3"
-  },
   "peerDependencies": {
+    "paths-js": "^0.4.10",
     "react": "> 16.7.0",
     "react-native": ">= 0.50.0",
     "react-native-svg": "> 6.4.1"
-  },
-  "dependencies": {
-    "paths-js": "^0.4.10"
   }
 }

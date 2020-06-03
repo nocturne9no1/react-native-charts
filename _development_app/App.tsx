@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, ScrollView, Dimensions } from 'react-native';
 
+import PieChart from '../pie-chart/src/index.tsx'
 import VerticalBarGraph from '../vertical-bar-graph/src/index.tsx';
 import LineGraph from '../line-graph/src/index.tsx';
 import HorizontalBarGraph from '../horizontal-bar-graph/src/index.tsx';
@@ -8,6 +9,43 @@ import HorizontalBarGraph from '../horizontal-bar-graph/src/index.tsx';
 export default function App() {
   return (
     <ScrollView style={styles.content}>
+      <PieChart
+        data={[
+          {
+            volume: 100,
+            color: '#53ae31'
+          },
+          {
+            volume: 70,
+            color: '#347975'
+          },
+          {
+            volume: 40,
+            color: '#82d551'
+          },
+          {
+            volume: 80,
+            color: 'lightgrey'
+          },
+          {
+            volume: 40,
+            color: 'grey'
+          },
+          {
+            volume: 67,
+            color: 'white'
+          }
+        ]}
+        width={(Dimensions.get('window').width - 70)}
+        height={200}
+        style={{
+          marginBottom: 30,
+          backgroundColor: 'whitesmoke',
+          width: (Dimensions.get('window').width - 70),
+          paddingVertical: 10,
+          borderRadius: 20
+        }}
+      />
       <VerticalBarGraph
         data={[20, 45, 28, 80, 99, 43, 50]}
         labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}

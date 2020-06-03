@@ -12,6 +12,7 @@
     "@chartiful/react-native-horizontal-bar-graph": "^0.1.2",
     "@chartiful/react-native-line-graph": "^0.1.2",
     "@chartiful/react-native-vertical-bar-graph": "^0.1.2",
+    "paths-js": "^0.4.10",
     "expo": "~37.0.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
