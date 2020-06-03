@@ -85,7 +85,7 @@ export default class ChartBuilder {
     startAtZero = true,
     height,
     width,
-    hasXAxisLabels,
+    hasXAxisLabels = true,
     hasYAxisLabels = true,
     xAxisLabelCount,
     xAxisLabelStyle,
@@ -130,11 +130,11 @@ export default class ChartBuilder {
     this.minVal = Math.min(...this.data)
 
 
-    this.xAxisLabelWidth = this.X_AXIS_LABEL_WIDTH
+    this.xAxisLabelWidth = hasXAxisLabels ? this.X_AXIS_LABEL_WIDTH : 0
     this.xAxisLabelPosition = 'left'
-    this.leftAlignedXAxisLabelWidth = this.X_AXIS_LABEL_WIDTH
+    this.leftAlignedXAxisLabelWidth = hasXAxisLabels ? this.X_AXIS_LABEL_WIDTH : 0
 
-    this.yAxisLabelHeight = this.Y_AXIS_LABEL_HEIGHT
+    this.yAxisLabelHeight = hasYAxisLabels ? this.Y_AXIS_LABEL_HEIGHT : 0
 
 
     if (this.yAxisLabelStyle) {
