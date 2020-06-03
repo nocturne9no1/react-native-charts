@@ -13,31 +13,38 @@ export default function App() {
         data={[
           {
             volume: 100,
-            color: '#53ae31'
+            color: '#53ae31',
+            label: 'Shopping'
           },
           {
             volume: 70,
-            color: '#347975'
+            color: '#347975',
+            label: 'Groceries'
           },
           {
             volume: 40,
-            color: '#82d551'
+            color: '#82d551',
+            label: 'Pets'
           },
           {
             volume: 80,
-            color: 'lightgrey'
+            color: 'lightgrey',
+            label: 'Transportation'
           },
           {
             volume: 40,
-            color: 'grey'
+            color: 'grey',
+            label: 'Entertainment'
           },
           {
             volume: 67,
-            color: 'white'
+            color: 'white',
+            label: 'Restaurants'
           }
         ]}
         width={(Dimensions.get('window').width - 70)}
         height={200}
+        hasLegend
         style={{
           marginBottom: 30,
           backgroundColor: 'whitesmoke',

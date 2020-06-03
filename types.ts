@@ -102,7 +102,10 @@ export interface PieChartConfig {
   }[],
   height: number,
   width: number,
-  center: number,
+  center?: number,
+  hasLegend?: boolean
+  legendWidth?: number,
+  legendHeight?: number,
   style?: any
 }
 
@@ -118,5 +121,6 @@ export interface LegendConfig {
   fontFamily: string
   fontSize: number
   fontWeight: number
+  xOffset: number
   style?: any
 }

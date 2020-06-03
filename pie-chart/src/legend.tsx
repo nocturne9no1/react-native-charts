@@ -7,6 +7,7 @@ const Legend = ({
   data,
   height,
   width,
+  xOffset,
   dotSize,
   fontFamily,
   fontSize,
@@ -14,15 +15,15 @@ const Legend = ({
   style = {}
 }: LegendConfig) => {
 
-  const slotHeight: number = height / data.length
+  const slotHeight: number = (height + dotSize) / data.length
 
   const renderDots = () => {
     return data.map((obj: {volume: number, label: string, color: string}, i) => {
       return (
         <Circle
           key={Math.random()}
-          cx={0}
-          cy={i * slotHeight}
+          cx={xOffset}
+          cy={i * slotHeight + fontSize}
           fill={obj.color}
           r={dotSize}
         />
@@ -35,13 +36,13 @@ const Legend = ({
       return (
         <Text
           key={Math.random()}
-          x={0}
-          y={i * slotHeight}
+          x={xOffset + 10}
+          y={i * slotHeight + fontSize}
           textAnchor='start'
           fontFamily={fontFamily}
-          fontSize={fontSize}
+          fontSize={fontSize || 12}
           fontWeight={fontWeight}
-          fill={'#000000'}
+          fill='#000000'
         >
           {obj.label}
         </Text>
@@ -50,16 +51,14 @@ const Legend = ({
   }
 
   return (
-    <View style={style}>
-      <Svg width={width} height={height}>
-        <G>
-          {renderLabels()}
-        </G>
-        <G>
-          {renderDots()}
-        </G>
-      </Svg>
-    </View>
+    <>
+      <G>
+        {renderLabels()}
+      </G>
+      <G>
+        {renderDots()}
+      </G>
+    </>
   )
 }
 
