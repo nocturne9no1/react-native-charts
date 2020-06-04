@@ -190,11 +190,11 @@ import LineGraph from '@chartiful/react-native-line-graph'
 
 - `lineWidth`?: number (defaults to `3`)
 
-- `hasDots`?: boolean  (defaulst to `true`)
+- `hasDots`?: boolean  (defaults to `true`)
 
 - `dotColor`?: string  (defaults to `'#000000'`)
 
-- `dotSize`?: number (defaulse to `5`)
+- `dotSize`?: number (defaults to `5`)
 
 - `isBezier`?: boolean  (defaults to `false`)
 
