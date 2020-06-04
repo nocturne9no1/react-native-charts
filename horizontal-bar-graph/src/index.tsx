@@ -4,7 +4,7 @@ import { Svg, Rect, G } from 'react-native-svg'
 import ChartBuilder from '@chartiful/react-native-chart-builder'
 import { VerticalBarGraphConfig, BaseChartConfig } from '../../types'
 
-const BarChart = ({
+const HorizontalBarGraph = ({
   data,
   labels,
   height,
@@ -127,4 +127,4 @@ const BarChart = ({
   )
 }
 
-export default BarChart
+export default HorizontalBarGraph
