@@ -4,9 +4,7 @@ The documentation for React Native Horizontal Bar Graph can be found [here](http
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-horizontal-bar-graph)**
 
-<p align="center">
-  <img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" height="400px" alt="bar graph image">
-</p>
+<img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" height="400px" alt="bar graph image">
 
 ### Installation
 
