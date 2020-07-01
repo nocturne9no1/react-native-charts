@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/chartiful/react-native-charts/issues"
   },
-  "homepage": "https://github.com/chartiful/react-native-charts/tree/master/line-graph",
+  "homepage": "https://chartiful.io/react-native/line-graph",
   "peerDependencies": {
     "@chartiful/react-native-chart-builder": ">= 0.1.8",
     "react": "> 16.7.0",

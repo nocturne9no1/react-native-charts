@@ -106,7 +106,7 @@ export default function App() {
       <HorizontalBarGraph
         data={[125, 100, 50, 75, 100, 125]}
         labels={['Q1, 2019', 'Q2, 2019', 'Q3, 2019', 'Q4, 2019', 'Q1, 2020', 'Q2, 2020']}
-        width={Dimensions.get('window').width - 100}
+        width={500}
         height={225}
         barRadius={7}
         barColor='#82d551'

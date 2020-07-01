@@ -8,10 +8,10 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@chartiful/react-native-chart-builder": "^0.1.6",
-    "@chartiful/react-native-horizontal-bar-graph": "^0.1.2",
-    "@chartiful/react-native-line-graph": "^0.1.2",
-    "@chartiful/react-native-vertical-bar-graph": "^0.1.2",
+    "@chartiful/react-native-chart-builder": "latest",
+    "@chartiful/react-native-horizontal-bar-graph": "latest",
+    "@chartiful/react-native-line-graph": "latest",
+    "@chartiful/react-native-vertical-bar-graph": "latest",
     "paths-js": "^0.4.10",
     "expo": "^37.0.0",
     "react": "16.9.0",

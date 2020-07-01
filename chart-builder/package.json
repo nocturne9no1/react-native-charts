@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/chartiful/react-native-charts/issues"
   },
-  "homepage": "https://github.com/chartiful/react-native-charts#readme",
+  "homepage": "https://chartiful.io/react-native",
   "peerDependencies": {
     "react": "> 16.7.0",
     "react-native": ">= 0.50.0",
