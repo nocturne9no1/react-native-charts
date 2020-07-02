@@ -11,4 +11,6 @@ The documentation for React Native Charts can be found [here](https://chartiful.
 
 ## Contribution
 
-Checkout the [Contribution Guide]('https://github.com/chartiful/react-native-charts/blob/trunk/CONTRIBUTING.md')
+If interested in helping out, checkout the [Contribution Guide](https://github.com/chartiful/react-native-charts/blob/trunk/CONTRIBUTING.md)!
+
+The project is currently maintained by [seanwatters](https://github.com/seanwatters) and [calebwatters](https://github.com/calebwatters).
