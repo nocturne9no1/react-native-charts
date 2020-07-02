@@ -8,7 +8,7 @@
 
 The documentation for React Native Charts can be found [here](https://chartiful.io/react-native).
 
-**[npm](https://www.npmjs.com/search?q=%40chartiful%2Freact-native)**
+**[NPM](https://www.npmjs.com/search?q=%40chartiful%2Freact-native)**
 
 ## Contribution
 
