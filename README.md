@@ -81,7 +81,7 @@ A chart library for React Native. Currently there is support for vertical bar gr
 npm i @chartiful/react-native-chart-builder @chartiful/react-native-vertical-bar-graph
 ```
 
-[npm](https://www.npmjs.com/package/@chartiful/react-native-vertical-bar-graph)
+- [npm package](https://www.npmjs.com/package/@chartiful/react-native-vertical-bar-graph)
 
 ### Example
 
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
 npm i @chartiful/react-native-chart-builder @chartiful/react-native-line-graph
 ```
 
-[npm](https://www.npmjs.com/package/@chartiful/react-native-line-graph)
+- [npm package](https://www.npmjs.com/package/@chartiful/react-native-line-graph)
 
 ### Example
 
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
 npm i @chartiful/react-native-chart-builder @chartiful/react-native-horizontal-bar-graph
 ```
 
-[npm](https://www.npmjs.com/package/@chartiful/react-native-horizontal-bar-graph)
+- [npm package](https://www.npmjs.com/package/@chartiful/react-native-horizontal-bar-graph)
 
 ### Example
 
