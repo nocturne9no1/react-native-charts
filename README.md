@@ -13,6 +13,8 @@ A chart library for React Native. Currently there is support for vertical bar gr
   <img src="https://seanwatters.io/images/@chartiful-react-native-overview.png" width="550px" alt="bar graph image">
 </p>
 
+<br>
+
 ## Base Chart Config
 
 - `startAtZero` ?: boolean
@@ -66,6 +68,8 @@ A chart library for React Native. Currently there is support for vertical bar gr
     - `color`?: string
 
   }
+
+<br>
 
 ## Vertical Bar Graph
 
@@ -142,6 +146,7 @@ const styles = StyleSheet.create({
 
 - `baseConfig`?: `BaseChartConfig`
 
+<br>
 
 ## Line Graph
 
@@ -228,6 +233,7 @@ const styles = StyleSheet.create({
 
 - `baseConfig`?: `BaseChartConfig`
 
+<br>
 
 ## Horizontal Bar Graph
 
@@ -315,6 +321,7 @@ const styles = StyleSheet.create({
 
 - `baseConfig`?: `BaseChartConfig`
 
+<br>
 
 ## Documentation
 
