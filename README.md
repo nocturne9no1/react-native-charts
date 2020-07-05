@@ -325,8 +325,6 @@ const styles = StyleSheet.create({
 
 The full documentation for React Native Charts can be found [here](https://chartiful.io/react-native).
 
-**[NPM](https://www.npmjs.com/search?q=%40chartiful%2Freact-native)**
-
 ## Contributing
 
 If interested in helping out, checkout the [Contribution Guide](https://github.com/chartiful/react-native-charts/blob/trunk/CONTRIBUTING.md)!
