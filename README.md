@@ -9,6 +9,10 @@ A chart library for React Native. Currently there is support for vertical bar gr
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 
+<p align="center">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-overview.png" width="550px" alt="bar graph image">
+</p>
+
 ## Base Chart Config
 
 - `startAtZero` ?: boolean
@@ -66,6 +70,10 @@ A chart library for React Native. Currently there is support for vertical bar gr
 <br>
 
 ## Vertical Bar Graph
+
+<p align="left">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" width="400px" alt="bar graph image">
+</p>
 
 ### Installation
 
@@ -139,6 +147,10 @@ const styles = StyleSheet.create({
 <br>
 
 ## Line Graph
+
+<p align="left">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" width="400px" alt="line graph image">
+</p>
 
 ### Installation
 
@@ -222,6 +234,10 @@ const styles = StyleSheet.create({
 <br>
 
 ## Horizontal Bar Graph
+
+<p align="left">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" width="400px" alt="bar graph image">
+</p>
 
 ### Installation
 
