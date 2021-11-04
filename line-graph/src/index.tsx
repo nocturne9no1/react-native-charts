@@ -9,6 +9,7 @@ const LineChart = ({
   data = [0,0,0,0],
   height,
   width,
+  labels,
   hasLine = true,
   lineWidth = 3,
   lineColor = '#000000',
@@ -24,6 +25,7 @@ const LineChart = ({
 
   const chartBuilder = new ChartBuilder({
     data,
+    labels,
     height: height - heightAdjustment * 2,
     width,
     ...baseConfig
